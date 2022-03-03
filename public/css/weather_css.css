@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap");
+
+/* temp details show here */
+.tempInformation {
+  width: 50rem;
+  margin: auto;
+  min-height: 20rem;
+  background-color: #323544;
+  border-radius: 1rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.top_layer {
+  background-color: #2d303d;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.top_layer p {
+  color: #fff;
+  font-weight: 300;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.main_layer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main_layer #city_name {
+  padding: 2rem 0;
+  color: #bfc1c8;
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.main_layer .middle_layer {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.fa {
+  color: #009ad8;
+}
+
+sup {
+  margin-top: -2rem;
+}
+
+.data_hide {
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.temp_form {
+  width: 60%;
+  position: relative;
+  margin: 10rem auto 6rem;
+}
+
+.temp_form input[type="text"] {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+}
+
+::placeholder {
+  color: #bfc1c8;
+}
+
+.temp_form input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: #009ad8;
+  padding: 0 3rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover {
+  color: #009ad8;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .temp_form {
+    width: auto;
+  }
+
+  .tempInformation {
+    width: auto;
+  }
+  .middle_layer,
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 4rem;
+  }
+
+  #temp_status {
+    margin-left: 1rem;
+  }
+}
