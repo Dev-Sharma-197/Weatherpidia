@@ -19,6 +19,12 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    )
+    fixed no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -70,14 +76,7 @@ body::-webkit-scrollbar {
 }
 
 /* main header */
-.main_header {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 255, 0.5),
-    rgba(255, 255, 0, 0.5)
-  );
-  height: 100%;
-}
+
 .main_header_left {
   height: 70rem;
   display: flex;
@@ -162,9 +161,5 @@ footer p {
   .main_header_right {
     height: auto;
     margin-top: 3rem;
-  }
-
-  .main_header {
-    height: auto;
   }
 }
