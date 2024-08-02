@@ -6,9 +6,9 @@ const app = express();
 const port = process.env.PORT || 80;
 
 // public folder root path
-const public_root_path = path.join(__dirname, "../public");
-const template_path = path.join(__dirname, "../templates/views");
-const partials_path = path.join(__dirname, "../templates/partials");
+const public_root_path = path.join(__dirname, "./public");
+const template_path = path.join(__dirname, "./templates/views");
+const partials_path = path.join(__dirname, "./templates/partials");
 let city = "Kurukshetra";
 
 // Setting template engine

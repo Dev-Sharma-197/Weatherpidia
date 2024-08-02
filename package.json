@@ -2,10 +2,10 @@
   "name": "complete_website",
   "version": "1.0.0",
   "description": "Complete Responsive website (Frontend + Backend)",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "node index.js"
   },
   "author": "Dev_Sharma",
   "license": "ISC",
