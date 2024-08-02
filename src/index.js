@@ -22,10 +22,7 @@ app.use(express.static(public_root_path));
 // Routing
 app.get("/weather", (req, res) => {
   if (req.query.location) {
-    console.log(req.query.location + "---------------");
     city = req.query.location;
-  } else {
-    console.log("null-----------------");
   }
 
   requests(
@@ -52,11 +49,10 @@ app.get("/weather", (req, res) => {
     })
     .on("end", (err) => {
       if (err) return console.log("Connection closed due to API error");
-      console.log("end---------");
     });
 });
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index");
 });
 
@@ -65,6 +61,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("*", (req, res) => {
+  console.log('you lost the way')
   res.render("404_error", {
     errorMsg: "OPPS!, You are on wrong track",
   });
